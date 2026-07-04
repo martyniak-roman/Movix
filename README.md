@@ -24,7 +24,7 @@ A React application for browsing movies, filtering by genres, searching titles, 
 
 1. Clone the repository:
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/martyniak-roman/Movix.git
 ```
 
 2. Go to the project folder:
