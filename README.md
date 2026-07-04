@@ -1,32 +1,77 @@
-# React + TypeScript + Vite
+# Movie App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A React application for browsing movies, filtering by genres, searching titles, and viewing detailed information about movie.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Browse popular movies
+- Filter movies by genre
+- Search movies by title
+- View detailed movie information
+- Watch trailer links
+- Pagination
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- TypeScript
+- Redux Toolkit
+- React Router
+- Tailwind CSS
+- Vite
 
-## Expanding the Oxlint configuration
+## Installation
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+1. Clone the repository:
+```bash
+git clone <your-repository-url>
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+2. Go to the project folder:
+```bash
+cd Movix
+```
+
+3. Install dependencies:
+```bash
+npm install
+```
+
+4. Run the development server:
+```bash
+npm run dev
+```
+
+## Build
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+To preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## Project Structure
+
+```text
+src/
+  components/
+  pages/
+  redux/
+  services/
+  models/
+```
+
+## Pages
+
+- `/` — movies list page
+- `/movie/:id` — movie details page
+
+## Notes
+
+This project uses TMDB API for movie data.

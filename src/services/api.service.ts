@@ -4,11 +4,16 @@ import type {TMDBResponse} from "../models/TMDBResponse.ts";
 import type {IMovie} from "../models/IMovie.ts";
 import {axiosInstance} from "./api.config.ts";
 
-export const getMovies = async (page = 1, genreId?: string): Promise<TMDBResponse<IMovie>> => {
+interface GetMoviesParams {
+    page: number;
+    with_genres?: number;
+}
+
+export const getMovies = async ({page, with_genres,}: GetMoviesParams): Promise<TMDBResponse<IMovie>> => {
     const response = await axiosInstance.get('/discover/movie', {
         params: {
             page,
-            with_genres: genreId
+            with_genres
         }
     });
     return response.data;
