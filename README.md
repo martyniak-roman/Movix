@@ -1,6 +1,6 @@
 # Movie App
 
-A React application for browsing movies, filtering by genres, searching titles, and viewing detailed information about movie.
+A React application for browsing movies, filtering by genres, searching movies, and viewing detailed information about movie.
 
 ## Features
 
