@@ -8,7 +8,6 @@ A React application for browsing movies, filtering by genres, searching movies, 
 - Filter movies by genre
 - Search movies by title
 - View detailed movie information
-- Watch trailer links
 - Pagination
 
 ## Tech Stack
