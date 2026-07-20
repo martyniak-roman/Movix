@@ -1,7 +1,7 @@
 import { Oval } from 'react-loader-spinner';
-import type {LoaderComponentProps} from "./loader.component.props.ts";
+import type {LoaderProps} from "./loader.props.ts";
 
-export const LoaderComponent = ({size = 40, fullScreen = false, label = 'Loading',}: LoaderComponentProps) => {
+export const LoaderComponent = ({size = 40, fullScreen = false, label = 'Loading',}: LoaderProps) => {
     const loader = (
         <Oval
             height={size}

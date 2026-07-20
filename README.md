@@ -61,7 +61,9 @@ npm run preview
 ```text
 src/
   components/
+  layouts/
   pages/
+  router/
   redux/
   services/
   models/
@@ -71,7 +73,3 @@ src/
 
 - `/` — movies list page
 - `/movie/:id` — movie details page
-
-## Notes
-
-This project uses TMDB API for movie data.
