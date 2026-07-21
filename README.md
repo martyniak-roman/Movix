@@ -70,5 +70,5 @@ src/
 
 ## Pages
 
-- `/` — movies list page
-- `/movie/:id` — movie details page
+- `/` — Movies list page with genres, pagination
+- `/movie/:id` — Movie details page with movie rating, movie genres, description, and movie official site
