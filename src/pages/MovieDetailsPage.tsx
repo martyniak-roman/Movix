@@ -33,7 +33,7 @@ export const MovieDetailsPage = () => {
     if (!id || status === 'failed' || !movie) {
         return (
             <ErrorComponent
-                title="Movie not found"
+                message="Movie not found"
                 error={error}
             />
         );

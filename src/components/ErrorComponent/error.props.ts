@@ -1,4 +1,4 @@
 export type ErrorProps = {
-    title?: string;
+    message?: string;
     error?: string | null;
 };

@@ -71,8 +71,16 @@ export const MoviesPage = () => {
     if (status === 'failed') {
         return (
             <ErrorComponent
-                title="Movies not found"
+                message="Movies not found"
                 error={error}
+            />
+        );
+    }
+
+    if (status === 'succeeded' && movies.length === 0) {
+        return (
+            <ErrorComponent
+                message={searchQuery ? `No results found for "${searchQuery}"` : ''}
             />
         );
     }
