@@ -26,7 +26,7 @@ export const Header: React.FC<HeaderProps> = ({ searchQuery, onSearchChange }) =
                         MOVIX
                     </Link>
 
-                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-[0.35rem] text-[11px] font-semibold uppercase tracking-[0.14em] text-app-text md:hidden">
+                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-[0.35rem]  text-[11px] font-semibold uppercase tracking-[0.14em] text-app-text md:hidden">
                         RM
                     </div>
                 </div>
@@ -44,7 +44,7 @@ export const Header: React.FC<HeaderProps> = ({ searchQuery, onSearchChange }) =
                         Roman Martyniak
                     </span>
 
-                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-[0.35rem] border border-app-accent/20 bg-app-surface text-[11px] font-semibold uppercase tracking-[0.14em] text-app-text">
+                    <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-[0.35rem] border border-app-accent/20 bg-app-accent-soft text-[11px] font-semibold uppercase tracking-[0.14em] text-app-text">
                         RM
                     </div>
                 </div>
